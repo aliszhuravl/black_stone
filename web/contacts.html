@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=77dc28d4-690d-41be-8dc9-157768aa7e38&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Контакты</title>
+</head>
+<body>
+<div class="page-container page-main">
+    <header class="header">
+        <div class="header__inner">
+          <div class="menu">
+              <ul class="menu_list">
+                  <li class="menu_list__item"><a href="catalog.html">Каталог</a></li>
+                  <li class="menu_list__item"><a href="feedback.html">Отзывы</a></li>
+                  <li class="menu_list__item"><a href="gallery.html">Галерея</a></li>
+                  <li class="menu_list__item"><a href="news.html">Новости</a></li>
+                  <li class="menu_list__item"><a href="contacts.html">Контакты</a></li>
+              </ul>
+          </div>
+            <div class="logo"><a href="index.html"><img src="img/logo.svg" alt=""></a></div>
+            <div class="contact">
+                <a href="tel:80000000000" class="phone">+7 (000-00) 0-00-00</a>
+                <div class="cart">
+                    <a href="cart.html" class="cart_item">Корзина</a><span>(2)</span>
+                </div>
+                <div class="hamburger">
+                    <button class="hamburger__item" id="burger">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main class="page">
+        <div class="page__inner">
+            <section class="page__item inner-page-hero">
+                <div class="page__item_main-title">
+                    <div class="bc"><a href="index.html">Главная</a> <span>/</span><p>Контакты</p></div>
+                    <h1>Контакты</h1>
+                </div>
+            </section>
+
+            <section class="page__item contacts_outter">
+                <div class="contacts_body">
+                    <div class="contacts_body__item">
+                        <div class="contacts__box">
+                            <div class="contacts__box_row">
+                                <p class="address">г.Петрозаводск 185000, Березовая аллея 24</p>
+                                <p class="subtext">Адрес в Петрозаводске</p>
+                            </div>
+                            <div class="contacts__box_row">
+                                <p class="address">ПН-ВС 10:00 — 19:00</p>
+                                <p class="subtext">График работы</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts_body__item">
+                        <div class="contacts__box">
+                            <div class="contacts__box_tile">
+                                <div class="contacts__box_tile_item">
+                                    <a href="#" class="link bold_link">8-800-700-60-74</a>
+                                    <p class="subtext">Телефон</p>
+                                </div>
+                                <div class="contacts__box_tile_item">
+                                    <a href="#" class="link bold_link">8-800-700-60-74</a>
+                                    <p class="subtext">Телефон</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts_body__item">
+                        <div class="contacts__box">
+                            <div class="contacts__box_tile">
+                                <div class="contacts__box_tile_item">
+                                    <a href="#" class="link bold_link">office@vsepamyatniki.ru</a>
+                                    <p class="subtext">Email офиса</p>
+                                </div>
+                                <div class="contacts__box_tile_item">
+                                    <a href="#" class="link bold_link">zakaz@vsepamyatniki.ru</a>
+                                    <p class="subtext">Email для заказа</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts_form">
+                    <h3>Свяжитесь с нами</h3>
+                    <div class="contacts_form__form">
+                        <div class="contacts_form__form_row">
+                            <input type="text" class="form__item" placeholder="Ваше Имя">
+                            <input type="text" class="form__item" placeholder="Email">
+                        </div>
+                        <input type="text" class="form__textarea" placeholder="Сообщение">
+
+                        <div class="contacts_form__form_row">
+                            <div class="agreement">
+                                <label class="inline-label form__checkbox check">
+                                    <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1" checked>
+                                    <span class="form__checkbox_indicator"></span>
+                                    <p>Я даю согласие на обработку моих персональных данных</p>
+                                </label>
+                            </div>
+                            <button class="btn">Отправить</button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="contacts_map map">
+            <div class="map_box" id="map"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer_top">
+                <div class="footer_top__item">
+                    <a href="catalog.html" class="link link_white top_title">Каталог</a>
+                    <ul class="footer_list">
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Памятники на могилу</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Комплексы</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Цоколя</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Ограды</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Цветники</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Надгробная плита</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Столики / лавочки</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Вазы</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Оформление</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Декор на памятник</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Плитка</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Щебень</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Таблички</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Колумбарий</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Вставка из гранита</a></li>
+                    </ul>
+                </div>
+                <div class="footer_top__item">
+                    <a href="catalog.html" class="link link_white top_title">Услуги</a>
+                    <ul class="footer_list">
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Гравировка</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Цветной портрет</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Памятник в 3d</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Ретушь на памятник</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Эскиз (согласование)</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Восстановление фото</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Столики / лавочки</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Вазы</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Оформление</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Декор на памятник</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Плитка</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Щебень</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Таблички</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Колумбарий</a></li>
+                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Вставка из гранита</a></li>
+                    </ul>
+                </div>
+                <div class="footer_top__item">
+                    <a href="catalog.html" class="link link_white top_title">Контакты</a>
+                    <div class="footer_contacts">
+                        <div class="contacts__box_tile">
+                            <div class="contacts__box_tile_item">
+                                <a href="#" class="bold_link">8-800-700-60-74</a>
+                                <p class="subtitle">Телефон</p>
+                            </div>
+                            <div class="contacts__box_tile_item">
+                                <a href="#" class="bold_link">office@vsepamyatniki.ru</a>
+                                <p class="subtitle">Email офиса</p>
+                            </div>
+                            <div class="contacts__box_tile_item">
+                                <a href="#" class="bold_link">+7 906 208-51-67</a>
+                                <p class="subtitle">Телефон</p>
+                            </div>
+                            <div class="contacts__box_tile_item">
+                                <a href="#" class="bold_link">office@vsepamyatniki.ru</a>
+                                <p class="subtitle">Email для заказа</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_top__item">
+                    <a href="catalog.html" class="link link_white top_title">Обратная связь</a>
+                    <div class="footer_form">
+                        <input type="tel" class="form__item" placeholder="Ваше имя">
+                        <input type="tel" class="form__item" placeholder="Ваш телефон">
+                        <div class="agreement">
+                            <label class="inline-label form__checkbox check">
+                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1" checked>
+                                <span class="form__checkbox_indicator"></span>
+                                <p>Я даю согласие на обработку моих персональных данных</p>
+                            </label>
+                        </div>
+                        <button class="btn">заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_mobile mobile">
+                <div class="footer_mobile__accordion">
+                    <div class="accordion">
+                        <ul class="accordion__list">
+                            <li class="accordion__item">
+                                <div class="accordion__btn">
+                                    <p class="accordion__text">Каталог</p>
+                                </div>
+                                <div class="accordion__content">
+                                    <ul class="footer_list">
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Памятники на могилу</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Комплексы</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Цоколя</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Ограды</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Цветники</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Надгробная плита</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Столики / лавочки</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Вазы</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Оформление</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Декор на памятник</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Плитка</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Щебень</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Таблички</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Колумбарий</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Вставка из гранита</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="accordion__item">
+                                <div class="accordion__btn">
+                                    <p class="accordion__text">Услуги</p>
+                                </div>
+                                <div class="accordion__content">
+                                    <ul class="footer_list">
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Гравировка</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Цветной портрет</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Памятник в 3d</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Ретушь на памятник</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Эскиз (согласование)</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Восстановление фото</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Столики / лавочки</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Вазы</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Оформление</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Декор на памятник</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Плитка</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Щебень</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Таблички</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Колумбарий</a></li>
+                                        <li class="footer_list__item"><a href="catalog.html" class="link_white">Вставка из гранита</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="accordion__item">
+                                <div class="accordion__btn">
+                                    <p class="accordion__text">Контакты</p>
+                                </div>
+                                <div class="accordion__content">
+                                    <div class="footer_contacts">
+                                        <div class="contacts__box_tile">
+                                            <div class="contacts__box_tile_item">
+                                                <a href="#" class="bold_link">8-800-700-60-74</a>
+                                                <p class="subtitle">Телефон</p>
+                                            </div>
+                                            <div class="contacts__box_tile_item">
+                                                <a href="#" class="bold_link">office@vsepamyatniki.ru</a>
+                                                <p class="subtitle">Email офиса</p>
+                                            </div>
+                                            <div class="contacts__box_tile_item">
+                                                <a href="#" class="bold_link">+7 906 208-51-67</a>
+                                                <p class="subtitle">Телефон</p>
+                                            </div>
+                                            <div class="contacts__box_tile_item">
+                                                <a href="#" class="bold_link">office@vsepamyatniki.ru</a>
+                                                <p class="subtitle">Email для заказа</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion__item accordion__item_open">
+                                <div class="accordion__btn">
+                                    <p class="accordion__text">Обратная связь</p>
+                                </div>
+                                <div class="accordion__content">
+                                    <div class="footer_form">
+                                        <input type="tel" class="form__item" placeholder="Ваше имя">
+                                        <input type="tel" class="form__item" placeholder="Ваш телефон">
+                                        <div class="agreement">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1" checked>
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Я даю согласие на обработку моих персональных данных</p>
+                                            </label>
+                                        </div>
+                                        <button class="btn">заказать звонок</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="copyright"><p>Копирайт 2023</p></div>
+                <div class="poweredby"><p>Сделано в</p><a href="https://karelia-it.su/" target="_blank"><img src="img/poweredby.svg" alt=""></a></div>
+                <div class="logo"><a href="index.html"><img src="img/logo-white.svg" alt=""></a></div>
+            </div>
+            <div class="powered_mobile mobile">
+                <div class="poweredby"><p>Сделано в</p><a href="https://karelia-it.su/" target="_blank"><img src="img/poweredby.svg" alt=""></a></div>
+            </div>
+        </div>
+    </footer>
+    <div class="menu_wrapper menu_opener">
+        <div class="menu_mobile">
+            <div class="menu_mobile__inner">
+                <div class="menu_body">
+                    <div class="menu_body__inner">
+                        <ul class="menu_body__inner_list">
+                            <li>
+                                <a href="index.html">Главная</a>
+                            </li>
+                            <li>
+                                <a href="catalog.html">Каталог</a>
+                            </li>
+                            <li>
+                                <a href="gallery.html">Галерея</a>
+                            </li>
+                            <li>
+                                <a href="feedback.html">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="menu_body__inner_bottom">
+                            <a href="tel:80000000000" class="phone">+7 (000-00) 0-00-00</a>
+                            <p>Телефон</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-3.1.1.min.js"><\/script>')</script>
+<script src="js/libs/jquery.slick/slick.min.js"></script>
+<script src="js/libs/jquery.hc-sticky.min.js"></script>
+<script type="text/javascript">
+    ymaps.ready(init);
+
+    function init() {
+        var myMap = new ymaps.Map("map", {
+                center: [61.766245, 34.313515],
+                zoom: 16
+            }),
+
+            // Создаем геообъект с типом геометрии "Точка".
+            myGeoObject = new ymaps.GeoObject({
+                // Описание геометрии.
+                geometry: {
+                    type: "Point",
+                    coordinates: [61.766245, 34.313515]
+                },
+                // Свойства.
+                properties: {
+                    // Контент метки.
+                    iconContent: '',
+                    balloonContent: 'Березовая Аллея, 24'
+                }
+            }, {
+                // Опции.
+                // Иконка метки будет растягиваться под размер ее содержимого.
+                preset: 'twirl#redStretchyIcon',
+                // Метку можно перемещать.
+                draggable: true
+            }),
+
+            // Создаем метку с помощью вспомогательного класса.
+            myPlacemark1 = new ymaps.Placemark([61.766245, 34.313515], {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                iconContent: '1',
+                balloonContent: 'Балун',
+                hintContent: 'Стандартный значок метки'
+            }, {
+                // Опции.
+                // Стандартная фиолетовая иконка.
+                preset: 'twirl#violetIcon'
+            }),
+
+            myPlacemark2 = new ymaps.Placemark([62.08, 35.21], {
+                // Свойства.
+                hintContent: 'березовая Аллея, 24'
+            }, {
+                // Опции.
+                // Своё изображение иконки метки.
+                iconImageHref: '../img/map.png',
+                // Размеры метки.
+                iconImageSize: [50, 70],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [0, 0]
+            });
+
+        //myMap.controls.add('smallZoomControl');
+        // Добавляем все метки на карту.
+        myMap.geoObjects.add(myPlacemark1)
+            .add(myPlacemark2)
+            .add(myGeoObject);
+    }
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

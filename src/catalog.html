@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    //= html/_head.html
+    <title>Контакты</title>
+</head>
+<body>
+<div class="page-container page-main">
+    //= html/_header.html
+    <main class="page">
+        <div class="page__inner">
+            <section class="page__item inner-page-hero">
+                <div class="page__item_main-title">
+                    <div class="bc"><a href="index.html">Главная</a> <span>/</span><p>Каталог</p></div>
+                    <h1>Каталог</h1>
+                </div>
+            </section>
+            <section class="page__item calalog">
+                <div class="catalog_filters centered">
+                    <div class="catalog_filters__item">
+                        <div class="dropdown dropdown_filters">
+                            <div class="dropdown__text">Форма</div>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item">
+                                    <p>Овальная</p>
+                                </li>
+                                <li class="dropdown__item">
+                                    <p>Прямоугольная</p>
+                                </li>
+                                <li class="dropdown__item">
+                                    <p>Крест</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown dropdown_filters">
+                            <div class="dropdown__text">Материал</div>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item">
+                                    <p>Черный гранит</p>
+                                </li>
+                                <li class="dropdown__item">
+                                    <p>Красный гранит</p>
+                                </li>
+                                <li class="dropdown__item">
+                                    <p>Мрамор</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown dropdown_filters">
+                            <div class="dropdown__text">Тип</div>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item">
+                                    <p>Тип 1</p>
+                                </li>
+                                <li class="dropdown__item">
+                                    <p>Прямоугольная</p>
+                                </li>
+                                <li class="dropdown__item">
+                                    <p>Крест</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog_filters__item">
+                        <div class="dropdown dropdown_filters black">
+                            <div class="dropdown__text">Сортировка</div>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item">
+                                    <p>Сначала дешевле</p>
+                                </li>
+                                <li class="dropdown__item">
+                                    <p>Сначала дороже</p>
+                                </li>
+                                <li class="dropdown__item">
+                                    <p>По новизне</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog_body">
+                    <div class="catalog_filters mobile">
+                        <button class="btn btn_transparent btn_filters" id="filters">Фильтры и сортировка</button>
+                    </div>
+                    <div class="catalog_side">
+                        <div class="cs__inner sticky">
+                            <div class="accordion">
+                                <ul class="accordion__list">
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text">Памятники на могилу</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Гранитные</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Экономичные</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Вертикальные</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Горизонтальные</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Двойные</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Арки и колонны</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Элитные</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Барельеф</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>С крестом</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Маленькие</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Эксклюзивные</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Часовни и Голгофы</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="simple_list">
+                                <ul class="simple_list__inner">
+                                    <li class="simple_list__inner_item">
+                                        <a href="#">Комплексы</a>
+                                    </li>
+                                    <li class="simple_list__inner_item">
+                                        <a href="#">Цоколя</a>
+                                    </li>
+                                    <li class="simple_list__inner_item">
+                                        <a href="#">ограды</a>
+                                    </li>
+                                    <li class="simple_list__inner_item">
+                                        <a href="#">цветники</a>
+                                    </li>
+                                    <li class="simple_list__inner_item">
+                                        <a href="#">надгробная плита</a>
+                                    </li>
+                                    <li class="simple_list__inner_item">
+                                        <a href="#">столики / лавочки</a>
+                                    </li>
+                                    <li class="simple_list__inner_item">
+                                        <a href="#">вазы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="accordion">
+                                <ul class="accordion__list">
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text">Оформление</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1" checked>
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Фотокерамика</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Фото на стекле</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Буквы из металла</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Скарпель и Позолота</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Пескоструй</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="accordion">
+                                <ul class="accordion__list">
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text">декор на памятник</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1" checked>
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Акрил</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Бронза</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Металл</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Скульптура</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Сaggiati</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="simple_list">
+                                <ul class="simple_list__inner">
+                                    <li class="simple_list__inner_item">
+                                        <a href="#">Плитка</a>
+                                    </li>
+                                    <li class="simple_list__inner_item">
+                                        <a href="#">Щебень</a>
+                                    </li>
+                                    <li class="simple_list__inner_item">
+                                        <a href="#">Таблички</a>
+                                    </li>
+                                    <li class="simple_list__inner_item">
+                                        <a href="#">Колумбарий</a>
+                                    </li>
+                                    <li class="simple_list__inner_item">
+                                        <a href="#">Вставка из гранита</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="accordion">
+                                <ul class="accordion__list">
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text">Услуги</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1" checked>
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Фотокерамика</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Фото на стекле</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Буквы из металла</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Скарпель и Позолота</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Пескоструй</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="accordion">
+                                <ul class="accordion__list">
+                                    <li class="accordion__item">
+                                        <div class="accordion__btn">
+                                            <p class="accordion__text">Гравировка</p>
+                                        </div>
+                                        <div class="accordion__content">
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1" checked>
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Акрил</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Бронза</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Металл</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Скульптура</p>
+                                            </label>
+                                            <label class="inline-label form__checkbox check">
+                                                <input class="form__checkbox_hidden" type="checkbox" name="checkbox-1">
+                                                <span class="form__checkbox_indicator"></span>
+                                                <p>Сaggiati</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog_main">
+                        <div class="catalog_items">
+                            <a href="item.html" class="catalog_items__item">
+                                <div class="catalog_items__item_img">
+                                    <div class="promo"><span>5%</span></div>
+                                    <div class="item_img"><img src="img/img.png" alt=""></div>
+                                    <div class="add_btn">
+                                        <button class="add_btn"><img src="img/plus.svg" alt=""></button>
+                                    </div>
+                                    <div class="hover_info">
+                                        <p class="status">В наличии</p>
+                                        <div class="raiting">
+                                            <img src="img/star.svg" alt="">
+                                            <p class="raiting_score">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog_items__item_text">
+                                    <div class="promo_mobile mobile_tel action">
+                                        <p class="sale">-5%</p>
+                                        <p class="uppercased">В наличии</p>
+                                    </div>
+                                    <p class="item_title">Памятник на могилу AM4000</p>
+                                    <div class="price">
+                                        <p class="old_price">14.800 руб.</p>
+                                        <p class="new_price">14.100 руб.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="item.html" class="catalog_items__item">
+                                <div class="catalog_items__item_img">
+                                    <div class="item_img"><img src="img/img.png" alt=""></div>
+                                    <div class="add_btn">
+                                        <button class="add_btn"><img src="img/plus.svg" alt=""></button>
+                                    </div>
+                                    <div class="hover_info">
+                                        <p class="status">В наличии</p>
+                                        <div class="raiting">
+                                            <img src="img/star.svg" alt="">
+                                            <p class="raiting_score">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog_items__item_text">
+                                    <div class="promo_mobile mobile_tel action">
+                                        <p class="sale">-5%</p>
+                                        <p class="uppercased">В наличии</p>
+                                    </div>
+                                    <p class="item_title">Памятник на могилу AM4000</p>
+                                    <div class="price">
+                                        <p class="new_price">14.100 руб.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="item.html" class="catalog_items__item">
+                                <div class="catalog_items__item_img">
+                                    <div class="item_img"><img src="img/img.png" alt=""></div>
+                                    <div class="add_btn">
+                                        <button class="add_btn"><img src="img/plus.svg" alt=""></button>
+                                    </div>
+                                    <div class="hover_info">
+                                        <p class="status">В наличии</p>
+                                        <div class="raiting">
+                                            <img src="img/star.svg" alt="">
+                                            <p class="raiting_score">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog_items__item_text">
+                                    <div class="promo_mobile mobile_tel">
+                                        <p class="uppercased">В наличии</p>
+                                    </div>
+                                    <p class="item_title">Памятник на могилу AM4000</p>
+                                    <div class="price">
+                                        <p class="new_price">14.100 руб.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="item.html" class="catalog_items__item">
+                                <div class="catalog_items__item_img">
+                                    <div class="item_img"><img src="img/img.png" alt=""></div>
+                                    <div class="add_btn">
+                                        <button class="add_btn"><img src="img/plus.svg" alt=""></button>
+                                    </div>
+                                    <div class="hover_info">
+                                        <p class="status">В наличии</p>
+                                        <div class="raiting">
+                                            <img src="img/star.svg" alt="">
+                                            <p class="raiting_score">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog_items__item_text">
+                                    <div class="promo_mobile mobile_tel">
+                                        <p class="uppercased">В наличии</p>
+                                    </div>
+                                    <p class="item_title">Памятник на могилу AM4000</p>
+                                    <div class="price">
+                                        <p class="new_price">14.100 руб.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="item.html" class="catalog_items__item">
+                                <div class="catalog_items__item_img">
+                                    <div class="item_img"><img src="img/img.png" alt=""></div>
+                                    <div class="add_btn">
+                                        <button class="add_btn"><img src="img/plus.svg" alt=""></button>
+                                    </div>
+                                    <div class="hover_info">
+                                        <p class="status">В наличии</p>
+                                        <div class="raiting">
+                                            <img src="img/star.svg" alt="">
+                                            <p class="raiting_score">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog_items__item_text">
+                                    <div class="promo_mobile mobile_tel">
+                                        <p class="uppercased">В наличии</p>
+                                    </div>
+                                    <p class="item_title">Памятник на могилу AM4000</p>
+                                    <div class="price">
+                                        <p class="new_price">14.100 руб.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="item.html" class="catalog_items__item">
+                                <div class="catalog_items__item_img">
+                                    <div class="item_img"><img src="img/img.png" alt=""></div>
+                                    <div class="add_btn">
+                                        <button class="add_btn"><img src="img/plus.svg" alt=""></button>
+                                    </div>
+                                    <div class="hover_info">
+                                        <p class="status">В наличии</p>
+                                        <div class="raiting">
+                                            <img src="img/star.svg" alt="">
+                                            <p class="raiting_score">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog_items__item_text">
+                                    <div class="promo_mobile mobile_tel">
+                                        <p class="uppercased">В наличии</p>
+                                    </div>
+                                    <p class="item_title">Памятник на могилу AM4000</p>
+                                    <div class="price">
+                                        <p class="new_price">14.100 руб.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="item.html" class="catalog_items__item">
+                                <div class="catalog_items__item_img">
+                                    <div class="item_img"><img src="img/img.png" alt=""></div>
+                                    <div class="add_btn">
+                                        <button class="add_btn"><img src="img/plus.svg" alt=""></button>
+                                    </div>
+                                    <div class="hover_info">
+                                        <p class="status">В наличии</p>
+                                        <div class="raiting">
+                                            <img src="img/star.svg" alt="">
+                                            <p class="raiting_score">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog_items__item_text">
+                                    <div class="promo_mobile mobile_tel">
+                                        <p class="uppercased">В наличии</p>
+                                    </div>
+                                    <p class="item_title">Памятник на могилу AM4000</p>
+                                    <div class="price">
+                                        <p class="new_price">14.100 руб.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="item.html" class="catalog_items__item">
+                                <div class="catalog_items__item_img">
+                                    <div class="item_img"><img src="img/img.png" alt=""></div>
+                                    <div class="add_btn">
+                                        <button class="add_btn"><img src="img/plus.svg" alt=""></button>
+                                    </div>
+                                    <div class="hover_info">
+                                        <p class="status">В наличии</p>
+                                        <div class="raiting">
+                                            <img src="img/star.svg" alt="">
+                                            <p class="raiting_score">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog_items__item_text">
+                                    <div class="promo_mobile mobile_tel">
+                                        <p class="uppercased">В наличии</p>
+                                    </div>
+                                    <p class="item_title">Памятник на могилу AM4000</p>
+                                    <div class="price">
+                                        <p class="new_price">14.100 руб.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="item.html" class="catalog_items__item">
+                                <div class="catalog_items__item_img">
+                                    <div class="item_img"><img src="img/img.png" alt=""></div>
+                                    <div class="add_btn">
+                                        <button class="add_btn"><img src="img/plus.svg" alt=""></button>
+                                    </div>
+                                    <div class="hover_info">
+                                        <p class="status">В наличии</p>
+                                        <div class="raiting">
+                                            <img src="img/star.svg" alt="">
+                                            <p class="raiting_score">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog_items__item_text">
+                                    <div class="promo_mobile mobile_tel">
+                                        <p class="uppercased">В наличии</p>
+                                    </div>
+                                    <p class="item_title">Памятник на могилу AM4000</p>
+                                    <div class="price">
+                                        <p class="new_price">14.100 руб.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="item.html" class="catalog_items__item">
+                                <div class="catalog_items__item_img">
+                                    <div class="item_img"><img src="img/img.png" alt=""></div>
+                                    <div class="add_btn">
+                                        <button class="add_btn"><img src="img/plus.svg" alt=""></button>
+                                    </div>
+                                    <div class="hover_info">
+                                        <p class="status">В наличии</p>
+                                        <div class="raiting">
+                                            <img src="img/star.svg" alt="">
+                                            <p class="raiting_score">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog_items__item_text">
+                                    <div class="promo_mobile mobile_tel">
+                                        <p class="uppercased">В наличии</p>
+                                    </div>
+                                    <p class="item_title">Памятник на могилу AM4000</p>
+                                    <div class="price">
+                                        <p class="new_price">14.100 руб.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="item.html" class="catalog_items__item">
+                                <div class="catalog_items__item_img">
+                                    <div class="item_img"><img src="img/img.png" alt=""></div>
+                                    <div class="add_btn">
+                                        <button class="add_btn"><img src="img/plus.svg" alt=""></button>
+                                    </div>
+                                    <div class="hover_info">
+                                        <p class="status">В наличии</p>
+                                        <div class="raiting">
+                                            <img src="img/star.svg" alt="">
+                                            <p class="raiting_score">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog_items__item_text">
+                                    <div class="promo_mobile mobile_tel">
+                                        <p class="uppercased">В наличии</p>
+                                    </div>
+                                    <p class="item_title">Памятник на могилу AM4000</p>
+                                    <div class="price">
+                                        <p class="new_price">14.100 руб.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="item.html" class="catalog_items__item">
+                                <div class="catalog_items__item_img">
+                                    <div class="item_img"><img src="img/img.png" alt=""></div>
+                                    <div class="add_btn">
+                                        <button class="add_btn"><img src="img/plus.svg" alt=""></button>
+                                    </div>
+                                    <div class="hover_info">
+                                        <p class="status">В наличии</p>
+                                        <div class="raiting">
+                                            <img src="img/star.svg" alt="">
+                                            <p class="raiting_score">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog_items__item_text">
+                                    <div class="promo_mobile mobile_tel">
+                                        <p class="uppercased">В наличии</p>
+                                    </div>
+                                    <p class="item_title">Памятник на могилу AM4000</p>
+                                    <div class="price">
+                                        <p class="new_price">14.100 руб.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="item.html" class="catalog_items__item">
+                                <div class="catalog_items__item_img">
+                                    <div class="item_img"><img src="img/img.png" alt=""></div>
+                                    <div class="add_btn">
+                                        <button class="add_btn"><img src="img/plus.svg" alt=""></button>
+                                    </div>
+                                    <div class="hover_info">
+                                        <p class="status">В наличии</p>
+                                        <div class="raiting">
+                                            <img src="img/star.svg" alt="">
+                                            <p class="raiting_score">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog_items__item_text">
+                                    <div class="promo_mobile mobile_tel">
+                                        <p class="uppercased">В наличии</p>
+                                    </div>
+                                    <p class="item_title">Памятник на могилу AM4000</p>
+                                    <div class="price">
+                                        <p class="new_price">14.100 руб.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="item.html" class="catalog_items__item">
+                                <div class="catalog_items__item_img">
+                                    <div class="item_img"><img src="img/img.png" alt=""></div>
+                                    <div class="add_btn">
+                                        <button class="add_btn"><img src="img/plus.svg" alt=""></button>
+                                    </div>
+                                    <div class="hover_info">
+                                        <p class="status">В наличии</p>
+                                        <div class="raiting">
+                                            <img src="img/star.svg" alt="">
+                                            <p class="raiting_score">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog_items__item_text">
+                                    <div class="promo_mobile mobile_tel">
+                                        <p class="uppercased">В наличии</p>
+                                    </div>
+                                    <p class="item_title">Памятник на могилу AM4000</p>
+                                    <div class="price">
+                                        <p class="new_price">14.100 руб.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="item.html" class="catalog_items__item">
+                                <div class="catalog_items__item_img">
+                                    <div class="item_img"><img src="img/img.png" alt=""></div>
+                                    <div class="add_btn">
+                                        <button class="add_btn"><img src="img/plus.svg" alt=""></button>
+                                    </div>
+                                    <div class="hover_info">
+                                        <p class="status">В наличии</p>
+                                        <div class="raiting">
+                                            <img src="img/star.svg" alt="">
+                                            <p class="raiting_score">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog_items__item_text">
+                                    <div class="promo_mobile mobile_tel">
+                                        <p class="uppercased">В наличии</p>
+                                    </div>
+                                    <p class="item_title">Памятник на могилу AM4000</p>
+                                    <div class="price">
+                                        <p class="new_price">14.100 руб.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="item.html" class="catalog_items__item">
+                                <div class="catalog_items__item_img">
+                                    <div class="item_img"><img src="img/img.png" alt=""></div>
+                                    <div class="add_btn">
+                                        <button class="add_btn"><img src="img/plus.svg" alt=""></button>
+                                    </div>
+                                    <div class="hover_info">
+                                        <p class="status">В наличии</p>
+                                        <div class="raiting">
+                                            <img src="img/star.svg" alt="">
+                                            <p class="raiting_score">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog_items__item_text">
+                                    <div class="promo_mobile mobile_tel">
+                                        <p class="uppercased">В наличии</p>
+                                    </div>
+                                    <p class="item_title">Памятник на могилу AM4000</p>
+                                    <div class="price">
+                                        <p class="new_price">14.100 руб.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="item.html" class="catalog_items__item">
+                                <div class="catalog_items__item_img">
+                                    <div class="item_img"><img src="img/img.png" alt=""></div>
+                                    <div class="add_btn">
+                                        <button class="add_btn"><img src="img/plus.svg" alt=""></button>
+                                    </div>
+                                    <div class="hover_info">
+                                        <p class="status">В наличии</p>
+                                        <div class="raiting">
+                                            <img src="img/star.svg" alt="">
+                                            <p class="raiting_score">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog_items__item_text">
+                                    <div class="promo_mobile mobile_tel">
+                                        <p class="uppercased">В наличии</p>
+                                    </div>
+                                    <p class="item_title">Памятник на могилу AM4000</p>
+                                    <div class="price">
+                                        <p class="new_price">14.100 руб.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="item.html" class="catalog_items__item">
+                                <div class="catalog_items__item_img">
+                                    <div class="item_img"><img src="img/img.png" alt=""></div>
+                                    <div class="add_btn">
+                                        <button class="add_btn"><img src="img/plus.svg" alt=""></button>
+                                    </div>
+                                    <div class="hover_info">
+                                        <p class="status">В наличии</p>
+                                        <div class="raiting">
+                                            <img src="img/star.svg" alt="">
+                                            <p class="raiting_score">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog_items__item_text">
+                                    <div class="promo_mobile mobile_tel">
+                                        <p class="uppercased">В наличии</p>
+                                    </div>
+                                    <p class="item_title">Памятник на могилу AM4000</p>
+                                    <div class="price">
+                                        <p class="new_price">14.100 руб.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="banner">
+            <div class="page__inner">
+                <section class="page__item">
+                    <p class="decorative">Наши менеджеры с готовностью проконсультируют вас по любому вопросу!</p>
+                    <input type="tel" class="form__item white_input" placeholder="Ваш телефон">
+                </section>
+            </div>
+        </div>
+        <div class="page__inner">
+            <section class="page__item calalog">
+                <div class="page__item_title sided">
+                    <h2>Отзывы</h2>
+                    <a href="gallery.html" class="link page__item_title_link">Перейти в раздел</a>
+                </div>
+                <div class="feedback__box">
+                    <div class="feedback__box_item">
+                        <div class="feedback__box_item_top">
+                            <p class="uppercased">Имя клиента</p>
+                            <div class="raiting">
+                                <img src="img/star.svg" alt="">
+                                <p class="raiting_score">4.5</p>
+                            </div>
+                        </div>
+                        <div class="feedback__box_item_body">
+                            <p>Имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка
+                                не хотите какой-нибудь шутки, скрытой в середине абзаца.</p>
+                        </div>
+                    </div>
+                    <div class="feedback__box_item">
+                        <div class="feedback__box_item_top">
+                            <p class="uppercased">Имя клиента</p>
+                            <div class="raiting">
+                                <img src="img/star.svg" alt="">
+                                <p class="raiting_score">4.5</p>
+                            </div>
+                        </div>
+                        <div class="feedback__box_item_body">
+                            <p>Имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь.</p>
+                        </div>
+                    </div>
+                    <div class="feedback__box_item">
+                        <div class="feedback__box_item_top">
+                            <p class="uppercased">Имя клиента</p>
+                            <div class="raiting">
+                                <img src="img/star.svg" alt="">
+                                <p class="raiting_score">4.5</p>
+                            </div>
+                        </div>
+                        <div class="feedback__box_item_body">
+                            <p>Имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка
+                                не хотите какой-нибудь шутки, скрытой в середине абзаца.</p>
+                        </div>
+                    </div>
+                    <div class="feedback__box_item">
+                        <div class="feedback__box_item_top">
+                            <p class="uppercased">Имя клиента</p>
+                            <div class="raiting">
+                                <img src="img/star.svg" alt="">
+                                <p class="raiting_score">4.5</p>
+                            </div>
+                        </div>
+                        <div class="feedback__box_item_body">
+                            <p>Имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__item calalog">
+                <div class="page__item_title sided">
+                    <h2>Галерея</h2>
+                    <a href="gallery.html" class="link page__item_title_link">Перейти в раздел</a>
+                </div>
+                <div class="page__item_slider">
+                    <div class="page__item_slider__inner slider_main">
+                        <div class="slide"><img src="img/001.jpg" alt=""></div>
+                        <div class="slide"><img src="img/003.jpg" alt=""></div>
+                        <div class="slide"><img src="img/003.jpg" alt=""></div>
+                        <div class="slide"><img src="img/001.jpg" alt=""></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    //= html/_footer.html
+    //= html/_menu.html
+    //= html/_filters.html
+</div>
+//= html/_scripts.html
+</body>
+</html>

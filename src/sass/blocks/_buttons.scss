@@ -1,0 +1,124 @@
+.btn {
+  position: relative;
+  vertical-align: top;
+  color: #fff;
+  font-family: $font-family-medium;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;
+  display: flex;
+  width: fit-content;
+  height: 40px;
+  padding: 6px 24px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 40px;
+  border: 1px solid $color-gold;
+
+  background: $color-gold;
+
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  transition: all 0.3s;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+    transition: all 0.3s;
+
+  }
+  
+  &:hover,
+  &:focus {
+    transition: all 0.3s;
+    border-color: #8F6E1B;
+    background-color: #8F6E1B;
+  }
+  
+  &:active {
+    background-color: darken($color-gray-10, 5%);
+  }
+}
+
+.btn_transparent {
+  background-color: transparent;
+  color: $color-gold;
+  transition: all 0.3s;
+    &:hover {
+      background-color: transparent;
+      color: $color-black;
+      border-color: $color-black;
+      transition: all 0.3s;
+    }
+  
+}
+
+.btn_disabled {
+  border-color: $color-gray-40;
+  background-color: $color-gray-10;
+  color: $color-gray-60;
+  cursor: default;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $color-gray-40;
+    background-color: $color-gray-10;
+    color: $color-gray-60;
+  }
+}
+
+.btn_upload {
+  overflow: hidden;
+
+  & > input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  &.btn_disabled > input[type=file] {
+    display: none;
+  }
+}
+
+.delete {
+  position: relative;
+  background-color: transparent;
+  border: none;
+    &:hover {
+      opacity: 0.5;
+    }
+}
+
+.btn_filters {
+  display: flex;
+  justify-content: flex-start;
+  font-family: $font-family;
+  background-image: url('../img/filters.svg');
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-size: 22px;
+  padding: 6px 16px;
+  height: 36px;
+  min-width: 255px;
+    &:hover, &:active {
+      border-color: $color-gold;
+      color: $color-gold;
+    }
+}
