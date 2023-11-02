@@ -9,3 +9,4 @@
 //= parts/_burger.js
 //= parts/_filters.js
 //= parts/_sticky.js
+//= parts/_menu.js

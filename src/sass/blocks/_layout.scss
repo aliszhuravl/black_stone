@@ -695,6 +695,14 @@
     }
   }
 
+  .panel {
+    display: block;
+  }
+
+  .footer {
+    padding-bottom: 50px;
+  }
+
 }
 
 
@@ -1543,6 +1551,15 @@
       align-items: center;
       justify-content: center;
     }
+  }
+
+  .page-hero .header {
+    margin-bottom: 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: $color-white;
+    z-index: 99;
   }
 
 }

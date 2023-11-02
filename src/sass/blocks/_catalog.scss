@@ -92,7 +92,10 @@
             }
             .promo {
               position: absolute;
+              padding: 4px 6px;
+              background-color: $color-gold;
               top: 0;
+              color: $color-white;
               left: 0;
               font-size: calc(16px + (20 - 16) * ((100vw - 1199px) / (1920 - 1199)));
             }
