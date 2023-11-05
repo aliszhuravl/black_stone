@@ -2,6 +2,11 @@
   @extend .layout-padding;
   width: 100%;
   margin-bottom: 70px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: $color-white;
+  z-index: 8;
 }
 
 .header__inner {
@@ -45,6 +50,14 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      position: relative;
+        .search {
+          cursor: pointer;
+          img {
+            width: 12px;
+            height: 12px;
+          }
+        }
         .phone {
           margin-right: 32px;
           font-size: calc(13px + (17 - 13) * ((100vw - 1280px) / (1920 - 1280)));
@@ -54,10 +67,58 @@
           font-family: $font-family_medium;
         }
         .cart {
+          margin-right: 30px;
           font-size: calc(13px + (17 - 13) * ((100vw - 1280px) / (1920 - 1280)));
             a {
               margin-right: 2px;
             }
         }
     }
+}
+
+.main_search {
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  background-color: $color-white;
+  transform: translateX(10%);
+  top: auto;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  .form__search {
+    position: relative;
+    min-width: 400px;
+    width: auto;
+    padding: 0 20px;
+    background-color: $color-white;
+    border-radius: 40px;
+    border: 1px solid $color-black;
+    font-size: 14px;
+    height: 40px;
+    box-shadow: none;
+    outline: none;
+    &:focus::-webkit-input-placeholder {color: transparent; transition: color .3s;}
+    &:focus::-moz-placeholder          {color: transparent; transition: color .3s;}
+  }
+  .close_search {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    img {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
+
+.ms_opened {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s ease-out;
+  transform: translateX(0%);
 }

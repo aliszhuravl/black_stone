@@ -4,9 +4,15 @@ $(document).ready(function() {
         dots: false,
         infinite: true,
         cssEase:'linear',
-        slidesToShow: 3,
+        slidesToShow: 4,
         arrows: true,
         responsive: [
+            {
+                breakpoint: 2000,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
             {
                 breakpoint: 1200,
                 settings: {

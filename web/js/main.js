@@ -152,9 +152,15 @@ $(document).ready(function() {
         dots: false,
         infinite: true,
         cssEase:'linear',
-        slidesToShow: 3,
+        slidesToShow: 4,
         arrows: true,
         responsive: [
+            {
+                breakpoint: 2000,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
             {
                 breakpoint: 1200,
                 settings: {
@@ -293,5 +299,13 @@ $(document).ready(function() {
 
     $('.close_search').on('click', function () {
         $('.panel_search').removeClass('ps_opened');
+    });
+
+    $('.search').on('click', function () {
+        $('.main_search').addClass('ms_opened');
+    });
+
+    $('.close_hs').on('click', function () {
+        $('.main_search').removeClass('ms_opened');
     });
 });

@@ -17,5 +17,13 @@ $(document).ready(function() {
     $('.close_search').on('click', function () {
         $('.panel_search').removeClass('ps_opened');
     });
+
+    $('.search').on('click', function () {
+        $('.main_search').addClass('ms_opened');
+    });
+
+    $('.close_hs').on('click', function () {
+        $('.main_search').removeClass('ms_opened');
+    });
 });
 

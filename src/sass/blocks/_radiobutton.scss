@@ -11,41 +11,47 @@
 
 .form__radio  {
   position: relative;
+  display: inline-block;
+  vertical-align: top;
   padding-left: 25px;
   margin-bottom: 10px;
-  display: inline-block;
   cursor: pointer;
-  font-size: $font_default;
+  font-size: calc(13px + (18 - 13) * ((100vw - 1199px) / (1920 - 1199)));
 }
 
 .form__radio_indicator {
   display: block;
   position: absolute;
-  top: 2px;
+  top: 1px;
   left: 0;
-  width: 18px;
-  height: 18px;
-  border: 1px solid $color-gray-40;
-  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $color-gold;
+  border-radius: 3px;
+  background: $color-white;
+  transition: all .1s;
 
   &:after {
     content: '';
     position: absolute;
-    top: 4px;
-    left: 4px;
-    width: 8px;
-    height: 8px;
-    background: $color-gray-70;
-    border-radius: 50%;
-    transition: all .2s;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 6px;
+    border-left: 2px solid $color-white;
+    border-bottom: 2px solid $color-white;
+    transform: rotate(-45deg);
+    transition: all .25s;
   }
 }
 
 //стили отмеченной кнопки
 .form__radio_hidden:checked + .form__radio_indicator {
+  background: $color-gold;
+  border-color: $color-gold;
 
   &:after {
-    transform: scale(1);
+    transform: scale(1) rotate(-45deg);
   }
 }
 
@@ -53,7 +59,7 @@
 .form__radio_hidden:not(checked) + .form__radio_indicator {
 
   &:after {
-    transform: scale(0);
+    transform: scale(0) rotate(-45deg);
   }
 }
 
