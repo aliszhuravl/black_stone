@@ -867,6 +867,10 @@
     * size on tablet
     */
 
+  .liked {
+    display: none;
+  }
+
   .search {
     display: none;
   }
@@ -2374,6 +2378,27 @@
     left: 0;
     background-color: $color-white;
     z-index: 99;
+  }
+
+  .header__inner .contact .cart {
+    margin-right: 8px;
+  }
+
+  .btn_like {
+    margin-right: 12px;
+    padding: 0;
+  }
+
+  .page-item .item-container .right__infobox_btns .btn {
+    margin-right: 12px;
+    padding: 6px 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+  }
+
+  .slick-slider {
+    overflow: hidden;
   }
 
 }

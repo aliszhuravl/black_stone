@@ -593,7 +593,7 @@ h3 {
 
 .header {
 	position: sticky;
-	z-index: 8;
+	z-index: 9;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -603,6 +603,7 @@ h3 {
 
 .header__inner {
 	display: flex;
+	overflow: hidden;
 	flex-direction: row;
 	width: 100%;
 	padding: 20px 0;
@@ -654,12 +655,13 @@ h3 {
 }
 
 .header__inner .contact .search {
+	height: 16px;
 	cursor: pointer;
 }
 
 .header__inner .contact .search img {
-	width: 12px;
-	height: 12px;
+	width: 14px;
+	height: 14px;
 }
 
 .header__inner .contact .phone {
@@ -738,6 +740,21 @@ h3 {
 	transition: all .2s ease-out;
 	transform: translateX(0%);
 	opacity: 1;
+}
+
+.liked {
+	display: block;
+	margin-right: 14px;
+}
+
+.liked .btn_like {
+	height: 14px;
+}
+
+.liked .btn_like svg {
+	width: 14px;
+	height: 14px;
+	margin-right: 3px;
 }
 
 .nav__list {
@@ -1348,6 +1365,33 @@ a:hover {
 .btn_filters:active {
 	color: #b89f5d;
 	border-color: #b89f5d;
+}
+
+.btn_like {
+	display: flex;
+	height: 20px;
+	margin-right: 16px;
+	transition: all .3s;
+	border: none;
+	background-color: transparent;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn_like svg {
+	width: 20px;
+	height: 20px;
+}
+
+.btn_like svg path {
+	transition: all .3s;
+}
+
+.btn_like:hover svg path,
+.btn_like:active svg path,
+.btn_like:focus svg path {
+	transition: all .3s;
+	fill: #b89f5d;
 }
 
 .form__checkbox {
@@ -3240,6 +3284,7 @@ a:hover {
 
 .page-item .item-container .right__infobox_price {
 	display: flex;
+	overflow: hidden;
 	width: 100%;
 	margin-bottom: 20px;
 	align-items: center;
@@ -5133,6 +5178,10 @@ h3 {
     * size on tablet
     */
 
+.liked {
+	display: none;
+}
+
 .search {
 	display: none;
 }
@@ -6722,6 +6771,28 @@ h3 {
 	left: 0;
 	margin-bottom: 0;
 	background-color: #f5f2ee;
+}
+
+.header__inner .contact .cart {
+	margin-right: 8px;
+}
+
+.btn_like {
+	margin-right: 12px;
+	padding: 0;
+}
+
+.page-item .item-container .right__infobox_btns .btn {
+	margin-right: 12px;
+	padding: 6px 20px;
+}
+
+.page-item .item-container .right__infobox_btns .btn:last-child {
+	margin-right: 0;
+}
+
+.slick-slider {
+	overflow: hidden;
 }
 
 }

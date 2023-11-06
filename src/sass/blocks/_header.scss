@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   background-color: $color-white;
-  z-index: 8;
+  z-index: 9;
 }
 
 .header__inner {
@@ -17,6 +17,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
+  overflow: hidden;
     .menu {
       width: 40%;
       &_list {
@@ -53,9 +54,10 @@
       position: relative;
         .search {
           cursor: pointer;
+          height: 16px;
           img {
-            width: 12px;
-            height: 12px;
+            width: 14px;
+            height: 14px;
           }
         }
         .phone {
@@ -121,4 +123,17 @@
   opacity: 1;
   transition: all 0.2s ease-out;
   transform: translateX(0%);
+}
+
+.liked {
+  display: block;
+  margin-right: 14px;
+  .btn_like {
+    height: 14px;
+      svg {
+        height: 14px;
+        width: 14px;
+        margin-right: 3px;
+      }
+  }
 }

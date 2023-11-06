@@ -144,6 +144,7 @@
               font-size: calc(16px + (18 - 16) * ((100vw - 1199px) / (1920 - 1199)));
             }
             &_price {
+              overflow: hidden;
               width: 100%;
               display: flex;
               align-items: center;

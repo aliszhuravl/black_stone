@@ -122,3 +122,27 @@
       color: $color-gold;
     }
 }
+
+.btn_like {
+  background-color: transparent;
+  border: none;
+  margin-right: 16px;
+  height: 20px;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    svg {
+      width: 20px;
+      height: 20px;
+        path {
+          transition: all 0.3s;
+        }
+    }
+    &:hover, &:active, &:focus {
+      svg path {
+        fill: $color-gold;
+        transition: all 0.3s;
+      }
+    }
+}
