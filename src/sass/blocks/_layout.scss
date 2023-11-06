@@ -18,6 +18,25 @@
 
 @media (min-width: 2000px) {
 
+  .layout-inner, .slider-buttons-wrapper, .header__inner, .page__inner, .footer__inner {
+    max-width: 2200px;
+    margin: 0 auto;
+  }
+
+  .btn_like svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .liked .btn_like svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contacts .page__inner {
+    max-width: 100%;
+  }
+
   .header__inner .contact .search img, .main_search .close_search img {
     width: 22px;
     height: 22px;
