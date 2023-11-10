@@ -11,26 +11,27 @@
 <body>
 <div class="page-container page-main">
     <header class="header">
-        <div class="header__inner">
-          <div class="menu">
-              <ul class="menu_list">
-                  <li class="menu_list__item"><a href="catalog.html">Каталог</a></li>
-                  <li class="menu_list__item"><a href="feedback.html">Отзывы</a></li>
-                  <li class="menu_list__item"><a href="gallery.html">Галерея</a></li>
-                  <li class="menu_list__item"><a href="news.html">Новости</a></li>
-                  <li class="menu_list__item"><a href="contacts.html">Контакты</a></li>
-              </ul>
-          </div>
-            <div class="logo"><a href="index.html"><img src="img/logo.svg" alt=""></a></div>
-            <div class="contact">
-                <a href="tel:80000000000" class="phone">+7 (000-00) 0-00-00</a>
-                <div class="cart">
-                    <a href="cart.html" class="cart_item">Корзина</a><span>(2)</span>
+        <div class="header_outter">
+            <div class="header__inner">
+                <div class="menu">
+                    <ul class="menu_list">
+                        <li class="menu_list__item"><a href="catalog.html">Каталог</a></li>
+                        <li class="menu_list__item"><a href="feedback.html">Отзывы</a></li>
+                        <li class="menu_list__item"><a href="gallery.html">Галерея</a></li>
+                        <li class="menu_list__item"><a href="news.html">Новости</a></li>
+                        <li class="menu_list__item"><a href="contacts.html">Контакты</a></li>
+                    </ul>
                 </div>
-                <div class="liked">
-                    <a class="btn_like" href="liked.html">
-                        <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                                            viewBox="0 0 799.9 724.2" style="enable-background:new 0 0 799.9 724.2;" xml:space="preserve">
+                <div class="logo"><a href="index.html"><img src="img/logo.svg" alt=""></a></div>
+                <div class="contact">
+                    <a href="tel:80000000000" class="phone">+7 (000-00) 0-00-00</a>
+                    <div class="cart">
+                        <a href="cart.html" class="cart_item">Корзина</a><span>(2)</span>
+                    </div>
+                    <div class="liked">
+                        <a class="btn_like" href="liked.html">
+                            <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 799.9 724.2" style="enable-background:new 0 0 799.9 724.2;" xml:space="preserve">
     <g>
         <path d="M400.1,107.4c5.5-7.7,10.7-15.6,16.6-22.9c34.4-42.3,79.1-67.8,132-78.9c37.4-7.9,74.8-8,111.7,3.6
     		c46.7,14.7,81.4,44.6,105.8,86.5c26.4,45.4,36.5,94.8,33.3,146.9c-3.7,59.4-24.8,113.1-54.7,163.8
@@ -44,25 +45,42 @@
     		c80.9-53.6,156.1-113.9,221.7-185.6c35.8-39.1,67.6-81.2,91.4-128.8C736.9,312.9,750,270.4,750.1,222.3z"/>
     </g>
     </svg>
-                        <span>(1)</span>
-                    </a>
+                            <span>(1)</span>
+                        </a>
+                    </div>
+                    <div class="search" id="search_btn">
+                        <img src="img/p_search.svg" alt="">
+                    </div>
+                    <div class="main_search">
+                        <input type="search" class="form_item form__search" placeholder="Поиск">
+                        <button class="close_search delete close_hs">
+                            <img src="img/delete.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="hamburger">
+                        <button class="hamburger__item" id="burger">
+                            <span></span>
+                        </button>
+                    </div>
                 </div>
-                <div class="search" id="search_btn">
-                    <img src="img/p_search.svg" alt="">
-                </div>
-                <div class="main_search">
-                    <input type="search" class="form_item form__search" placeholder="Поиск">
-                    <button class="close_search delete close_hs">
-                        <img src="img/delete.svg" alt="">
-                    </button>
-                </div>
-                <div class="hamburger">
-                    <button class="hamburger__item" id="burger">
-                        <span></span>
-                    </button>
+
+            </div>
+        </div>
+        <div class="subheader">
+            <div class="subheader_left">
+                <div class="menu">
+                    <ul class="menu_list">
+                        <li class="menu_list__item"><a href="#">FAQ</a></li>
+                        <li class="menu_list__item"><a href="#">Доставка</a></li>
+                        <li class="menu_list__item"><a href="#">Оплата</a></li>
+                        <li class="menu_list__item"><a href="#">Гарантии</a></li>
+                        <li class="menu_list__item"><a href="#">Еще пункт</a></li>
+                    </ul>
                 </div>
             </div>
-
+            <div class="subheader_right">
+                <p class="address">г.Петрозаводск 185000, Березовая аллея 24</p>
+            </div>
         </div>
     </header>
     <main class="page page-item">
@@ -174,21 +192,25 @@
                         </div>
                         <div class="right__infobox_btns">
                             <button class="btn_like">
-                                <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 799.9 724.2" style="enable-background:new 0 0 799.9 724.2;" xml:space="preserve">
-<g>
-    <path d="M400.1,107.4c5.5-7.7,10.7-15.6,16.6-22.9c34.4-42.3,79.1-67.8,132-78.9c37.4-7.9,74.8-8,111.7,3.6
-		c46.7,14.7,81.4,44.6,105.8,86.5c26.4,45.4,36.5,94.8,33.3,146.9c-3.7,59.4-24.8,113.1-54.7,163.8
-		c-31.7,53.8-71.5,101.1-115.7,144.9c-64,63.5-134.8,118.5-210.8,166.9c-12.3,7.8-23.3,8.2-35.7,0.2C288,658,201.2,588.6,127,504.3
-		C90.7,463.1,59.1,418.7,35.3,369C12.4,321-1.8,270.8,0.2,217.1C2.3,157.7,20,103.7,60.9,59.2C96.1,20.9,140.5,2,192.2,0.5
-		c59.6-1.7,113.4,15.2,160.2,52.8c17.8,14.3,32.7,31.3,44.8,50.7c0.6,1,1.2,2,1.9,2.9C399.3,107.1,399.7,107.2,400.1,107.4z
-		 M750.1,222.3c-0.3-32-7.1-64.9-23.3-95.4c-19.2-36.1-47.5-61.7-87.8-71.8c-44.3-11-87-4.1-127.1,16.3
-		c-53,26.9-85.6,68.2-87.1,130.2c-0.1,5-3,10.7-6.1,14.8c-6.2,8.3-17.4,10.7-27.1,7.1c-10.2-3.7-16.3-12.6-16.5-24.4
-		c-0.5-36.8-13.9-68.3-39.9-94.1c-37.6-37.4-83.9-54.5-136.4-54.6c-45.2-0.1-82.7,17.3-110.5,53.4c-26.2,34-36.9,73.5-38.1,115.7
-		c-1.3,46,11.3,88.9,31.2,129.9c23,47.5,54.1,89.4,89.3,128.4c66.6,73.8,143.4,135.6,226.2,190.3c2.6,1.7,4.3,1.3,6.7-0.3
-		c80.9-53.6,156.1-113.9,221.7-185.6c35.8-39.1,67.6-81.2,91.4-128.8C736.9,312.9,750,270.4,750.1,222.3z"/>
-</g>
-</svg>
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                     width="1280.000000pt" height="1189.000000pt" viewBox="0 0 1280.000000 1189.000000"
+                                     preserveAspectRatio="xMidYMid meet">
+                                    <metadata>
+                                        Created by potrace 1.15, written by Peter Selinger 2001-2017
+                                    </metadata>
+                                    <g transform="translate(0.000000,1189.000000) scale(0.100000,-0.100000)"
+                                       fill="#000000" stroke="none">
+                                        <path d="M3250 11884 c-25 -2 -106 -11 -180 -20 -1485 -172 -2704 -1295 -3001
+-2764 -133 -660 -67 -1507 171 -2223 252 -753 675 -1411 1397 -2172 342 -360
+634 -630 1588 -1470 231 -203 488 -430 570 -505 1024 -920 1735 -1692 2346
+-2547 l130 -183 132 0 132 1 130 192 c557 822 1212 1560 2185 2461 191 178
+408 373 1027 923 956 852 1445 1343 1841 1850 643 825 968 1603 1064 2553 19
+196 17 665 -5 835 -105 805 -441 1497 -998 2054 -557 557 -1250 894 -2054 998
+-193 24 -613 24 -810 0 -733 -93 -1379 -387 -1920 -874 -191 -172 -406 -417
+-535 -610 -30 -45 -57 -82 -60 -82 -3 0 -30 37 -60 82 -129 193 -344 438 -535
+610 -531 478 -1170 773 -1878 867 -146 20 -562 34 -677 24z"/>
+                                    </g>
+                                </svg>
                             </button>
                             <button class="btn btn_transparent">Купить сейчас</button>
                             <button class="btn">В коризну</button>
@@ -1141,6 +1163,18 @@
                             </li>
                             <li>
                                 <a href="contacts.html">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">Оплата</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">Гарантии</a>
                             </li>
                         </ul>
                         <div class="menu_body__inner_bottom">

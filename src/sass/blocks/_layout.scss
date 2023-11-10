@@ -90,9 +90,9 @@
   }
 
   .hero_block h1 {
-    font-size: 116px;
-    line-height: 116px;
-    margin-bottom: 40px;
+    font-size: 104px;
+    line-height: 104px;
+    margin-bottom: 30px;
   }
 
   .hero_block__inner_text .decorative {
@@ -525,9 +525,15 @@
     margin-bottom: 40px;
   }
 
-  .page-item .item-container .left .price_left__prices .old_price, .page-item .item-container .left .price_left__prices .new_price {
-    font-size: 32px;
-    line-height: 36px;
+  .page-item .item-container .left .price_left__prices .new_price {
+    font-size: 28px;
+    line-height: 30px;
+    margin-right: 24px;
+  }
+
+  .page-item .item-container .left .price_left__prices .old_price {
+    font-size: 28px;
+    line-height: 30px;
   }
 
   h3 {
@@ -881,6 +887,10 @@
 
 
 @media (max-width: 1199px) {
+
+  .subheader {
+    display: none;
+  }
 
   /**
     * size on tablet
@@ -2418,6 +2428,30 @@
 
   .slick-slider {
     overflow: hidden;
+  }
+
+  .menu_mobile__inner .menu_body__inner ul li a {
+    font-size: 20px;
+  }
+
+  .menu_mobile__inner .menu_body__inner ul li {
+    margin: 26px 0;
+  }
+
+  .form__radio {
+    font-size: 12px;
+
+  }
+
+  .form__radio_indicator {
+    top: -1px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .form__radio_indicator:after {
+    width: 8px;
+    height: 5px;
   }
 
 }

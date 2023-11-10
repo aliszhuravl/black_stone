@@ -601,12 +601,16 @@ h3 {
 	background-color: #f5f2ee;
 }
 
+.header_outter {
+	width: 100%;
+}
+
 .header__inner {
 	display: flex;
 	overflow: hidden;
 	flex-direction: row;
 	width: 100%;
-	padding: 20px 0;
+	padding: 12px 0;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -755,6 +759,61 @@ h3 {
 	width: 14px;
 	height: 14px;
 	margin-right: 3px;
+}
+
+.liked .btn_like svg path {
+	fill: #3e3e3e;
+}
+
+.subheader {
+	display: flex;
+	width: 100%;
+	padding: 10px 0;
+	background-color: #b89f5d;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.subheader_left {
+	width: 50%;
+}
+
+.subheader_left .menu {
+	width: 100%;
+}
+
+.subheader_left .menu_list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	align-items: center;
+}
+
+.subheader_left .menu_list__item {
+	padding: 0 16px;
+}
+
+.subheader_left .menu_list__item:first-child {
+	padding-left: 0;
+}
+
+.subheader_left .menu_list__item:last-child {
+	padding-right: 0;
+}
+
+.subheader_left .menu_list__item a {
+	font-size: calc(13px + 4 * (100vw - 1280px) / 640);
+	color: #f5f2ee;
+}
+
+.subheader_right {
+	width: 50%;
+	text-align: right;
+}
+
+.subheader_right p {
+	color: #f5f2ee;
 }
 
 .nav__list {
@@ -1232,7 +1291,8 @@ a:hover {
 }
 
 .layout-padding,
-.header,
+.header_outter,
+.subheader,
 .page__item,
 .footer {
 	padding-right: 40px;
@@ -1385,6 +1445,7 @@ a:hover {
 
 .btn_like svg path {
 	transition: all .3s;
+	fill: #cec7bd;
 }
 
 .btn_like:hover svg path,
@@ -4410,17 +4471,19 @@ body {
 }
 
 .layout-padding,
-.header,
+.header_outter,
+.subheader,
 .page__item,
-.footer {
+.footer,
+.header {
 	padding-right: 80px;
 	padding-left: 80px;
 }
 
 .hero_block h1 {
-	font-size: 116px;
-	line-height: 116px;
-	margin-bottom: 40px;
+	font-size: 104px;
+	line-height: 104px;
+	margin-bottom: 30px;
 }
 
 .hero_block__inner_text .decorative {
@@ -4867,10 +4930,15 @@ h2 {
 	margin-bottom: 40px;
 }
 
-.page-item .item-container .left .price_left__prices .old_price,
 .page-item .item-container .left .price_left__prices .new_price {
-	font-size: 32px;
-	line-height: 36px;
+	font-size: 28px;
+	line-height: 30px;
+	margin-right: 24px;
+}
+
+.page-item .item-container .left .price_left__prices .old_price {
+	font-size: 28px;
+	line-height: 30px;
 }
 
 h3 {
@@ -5196,6 +5264,10 @@ h3 {
 }
 
 @media (max-width: 1199px) {
+
+.subheader {
+	display: none;
+}
 
 /**
     * size on tablet
@@ -5997,7 +6069,8 @@ h1 {
 }
 
 .layout-padding,
-.header,
+.header_outter,
+.subheader,
 .page__item,
 .footer {
 	padding-right: 20px;
@@ -6816,6 +6889,29 @@ h3 {
 
 .slick-slider {
 	overflow: hidden;
+}
+
+.menu_mobile__inner .menu_body__inner ul li a {
+	font-size: 20px;
+}
+
+.menu_mobile__inner .menu_body__inner ul li {
+	margin: 26px 0;
+}
+
+.form__radio {
+	font-size: 12px;
+}
+
+.form__radio_indicator {
+	top: -1px;
+	width: 14px;
+	height: 14px;
+}
+
+.form__radio_indicator:after {
+	width: 8px;
+	height: 5px;
 }
 
 }

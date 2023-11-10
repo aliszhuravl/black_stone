@@ -11,26 +11,27 @@
 <body>
 <div class="page-container page-main page-hero">
     <header class="header">
-        <div class="header__inner">
-          <div class="menu">
-              <ul class="menu_list">
-                  <li class="menu_list__item"><a href="catalog.html">Каталог</a></li>
-                  <li class="menu_list__item"><a href="feedback.html">Отзывы</a></li>
-                  <li class="menu_list__item"><a href="gallery.html">Галерея</a></li>
-                  <li class="menu_list__item"><a href="news.html">Новости</a></li>
-                  <li class="menu_list__item"><a href="contacts.html">Контакты</a></li>
-              </ul>
-          </div>
-            <div class="logo"><a href="index.html"><img src="img/logo.svg" alt=""></a></div>
-            <div class="contact">
-                <a href="tel:80000000000" class="phone">+7 (000-00) 0-00-00</a>
-                <div class="cart">
-                    <a href="cart.html" class="cart_item">Корзина</a><span>(2)</span>
+        <div class="header_outter">
+            <div class="header__inner">
+                <div class="menu">
+                    <ul class="menu_list">
+                        <li class="menu_list__item"><a href="catalog.html">Каталог</a></li>
+                        <li class="menu_list__item"><a href="feedback.html">Отзывы</a></li>
+                        <li class="menu_list__item"><a href="gallery.html">Галерея</a></li>
+                        <li class="menu_list__item"><a href="news.html">Новости</a></li>
+                        <li class="menu_list__item"><a href="contacts.html">Контакты</a></li>
+                    </ul>
                 </div>
-                <div class="liked">
-                    <a class="btn_like" href="liked.html">
-                        <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                                            viewBox="0 0 799.9 724.2" style="enable-background:new 0 0 799.9 724.2;" xml:space="preserve">
+                <div class="logo"><a href="index.html"><img src="img/logo.svg" alt=""></a></div>
+                <div class="contact">
+                    <a href="tel:80000000000" class="phone">+7 (000-00) 0-00-00</a>
+                    <div class="cart">
+                        <a href="cart.html" class="cart_item">Корзина</a><span>(2)</span>
+                    </div>
+                    <div class="liked">
+                        <a class="btn_like" href="liked.html">
+                            <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 799.9 724.2" style="enable-background:new 0 0 799.9 724.2;" xml:space="preserve">
     <g>
         <path d="M400.1,107.4c5.5-7.7,10.7-15.6,16.6-22.9c34.4-42.3,79.1-67.8,132-78.9c37.4-7.9,74.8-8,111.7,3.6
     		c46.7,14.7,81.4,44.6,105.8,86.5c26.4,45.4,36.5,94.8,33.3,146.9c-3.7,59.4-24.8,113.1-54.7,163.8
@@ -44,25 +45,42 @@
     		c80.9-53.6,156.1-113.9,221.7-185.6c35.8-39.1,67.6-81.2,91.4-128.8C736.9,312.9,750,270.4,750.1,222.3z"/>
     </g>
     </svg>
-                        <span>(1)</span>
-                    </a>
+                            <span>(1)</span>
+                        </a>
+                    </div>
+                    <div class="search" id="search_btn">
+                        <img src="img/p_search.svg" alt="">
+                    </div>
+                    <div class="main_search">
+                        <input type="search" class="form_item form__search" placeholder="Поиск">
+                        <button class="close_search delete close_hs">
+                            <img src="img/delete.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="hamburger">
+                        <button class="hamburger__item" id="burger">
+                            <span></span>
+                        </button>
+                    </div>
                 </div>
-                <div class="search" id="search_btn">
-                    <img src="img/p_search.svg" alt="">
-                </div>
-                <div class="main_search">
-                    <input type="search" class="form_item form__search" placeholder="Поиск">
-                    <button class="close_search delete close_hs">
-                        <img src="img/delete.svg" alt="">
-                    </button>
-                </div>
-                <div class="hamburger">
-                    <button class="hamburger__item" id="burger">
-                        <span></span>
-                    </button>
+
+            </div>
+        </div>
+        <div class="subheader">
+            <div class="subheader_left">
+                <div class="menu">
+                    <ul class="menu_list">
+                        <li class="menu_list__item"><a href="#">FAQ</a></li>
+                        <li class="menu_list__item"><a href="#">Доставка</a></li>
+                        <li class="menu_list__item"><a href="#">Оплата</a></li>
+                        <li class="menu_list__item"><a href="#">Гарантии</a></li>
+                        <li class="menu_list__item"><a href="#">Еще пункт</a></li>
+                    </ul>
                 </div>
             </div>
-
+            <div class="subheader_right">
+                <p class="address">г.Петрозаводск 185000, Березовая аллея 24</p>
+            </div>
         </div>
     </header>
     <main class="page">
@@ -1271,6 +1289,18 @@
                             </li>
                             <li>
                                 <a href="contacts.html">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">Оплата</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">Гарантии</a>
                             </li>
                         </ul>
                         <div class="menu_body__inner_bottom">
