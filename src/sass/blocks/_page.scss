@@ -35,9 +35,12 @@
     }
     &_main-title {
       .bc {
+        list-style-type: none;
         display: flex;
         align-items: center;
         margin-bottom: 20px;
+        margin-left: 0;
+        padding-left: 0;
       }
       h1 {
         font-size: 72px;

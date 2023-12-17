@@ -887,6 +887,9 @@ h3 {
 .page__item_main-title .bc {
 	display: flex;
 	margin-bottom: 20px;
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
 	align-items: center;
 }
 
