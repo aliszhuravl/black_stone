@@ -615,7 +615,8 @@ h3 {
 }
 
 .header__inner .menu {
-	width: 40%;
+	width: auto;
+	order: 2;
 }
 
 .header__inner .menu_list {
@@ -627,7 +628,7 @@ h3 {
 }
 
 .header__inner .menu_list__item {
-	padding: 0 16px;
+	padding: 0 24px;
 }
 
 .header__inner .menu_list__item:first-child {
@@ -639,20 +640,24 @@ h3 {
 }
 
 .header__inner .menu_list__item a {
-	font-size: calc(13px + 4 * (100vw - 1280px) / 640);
+	font-family: 'MontserratMedium', 'Arial', serif;
+	font-size: calc(14px + 4 * (100vw - 1280px) / 640);
 }
 
 .header__inner .logo {
 	display: flex;
-	width: 20%;
+	width: auto;
+	margin-right: 50px;
 	align-items: center;
 	justify-content: center;
+	order: 1;
 }
 
 .header__inner .contact {
 	position: relative;
 	display: flex;
-	width: 40%;
+	width: auto;
+	order: 3;
 	align-items: center;
 	justify-content: flex-end;
 }
