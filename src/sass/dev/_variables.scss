@@ -1,6 +1,6 @@
-$color-black: 			#3E3E3E;
-$color-white: 			#F5F2EE;
-$color-gold: 			#B89F5D;
+$color-black: 			#3B3B3B;
+$color-white: 			#F5F4F3;
+$color-gold: 			#947E67;
 
 $color-gray-5:    	    #fcfcfc;
 $color-gray-10:    	    #f5f7f9;
@@ -24,12 +24,16 @@ $font-color_dark:       #2e3033;
 $font-color:            #9da1a7;
 $font-color_light:      #d3dae9;
 
-$font-family:			"Gotham-Regular", "Arial", serif;
-$font-family_medium:	"Gotham-Medium", "Arial", serif;
-$font-family_bold:		"Gotham-Bold", "Arial", serif;
-$font-family_decorative: "Decorative", "Arial", serif;
-$font-family_decorative-bold: "Decorative-Bold", "Arial", serif;
-$font-family_decorative-reg: "Decorative-Regular", "Arial", serif;
+$font-family:			"Montserrat", "Arial", serif;
+$font-family_light:		"MontserratLight", "Arial", serif;
+$font-family_medium:	"MontserratMedium", "Arial", serif;
+$font-family_semibold:	"MontserratSemibold", "Arial", serif;
+$font-family_bold:	    "Montserratbold", "Arial", serif;
+$font-family_italic:	"MontserratItalic", "Arial", serif;
+$font-family_medium-italic:	"MontserratMediumItalic", "Arial", serif;
+$font-family_decorative: "LinguaFranca-Regular", "Arial", serif;
+$font-family_decorative-bold: "LinguaFranca-Regular", "Arial", serif;
+$font-family_decorative-reg: "LinguaFranca-Italic", "Arial", serif;
 
 $h1-size: 				38px;
 $h2-size: 				24px;

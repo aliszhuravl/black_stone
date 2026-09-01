@@ -1,56 +1,59 @@
-/* font-family: "Regular"; */
 @font-face {
-  font-family: "Gotham-Regular";
-  src: url("../fonts/GothamPro/GothamPro.eot");
-  src: url("../fonts/GothamPro/GothamPro.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/GothamPro/GothamPro.woff") format("woff"),
-  url("../fonts/GothamPro/GothamPro.ttf") format("truetype");
+  font-family: 'MontserratLight';
+  src: url('../fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+  font-weight: 300;
   font-style: normal;
-  font-weight: normal;
 }
 
-/* font-family: "Medium"; */
 @font-face {
-  font-family: "Gotham-Medium";
-  src: url("../fonts/GothamPro/GothamPro-Medium.eot");
-  src: url("../fonts/GothamPro/GothamPro-Medium.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/GothamPro/GothamPro-Medium.woff") format("woff"),
-  url("../fonts/GothamPro/GothamPro-Medium.ttf") format("truetype");
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
-  font-weight: normal;
 }
 
-/* font-family: "Bold"; */
 @font-face {
-  font-family: "Gotham-Bold";
-  src: url("../fonts/GothamPro/GothamPro-Bold.eot");
-  src: url("../fonts/GothamPro/GothamPro-Bold.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/GothamPro/GothamPro-Bold.woff") format("woff"),
-  url("../fonts/GothamPro/GothamPro-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'MontserratMedium';
+  src: url('../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
 }
 
-/* font-family: "Deco"; */
 @font-face {
-  font-family: "Decorative";
-  src: url("../fonts/Spectral/Spectral-Medium.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'MontserratSemibold';
+  src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
 }
 
-/* font-family: "Deco-bold"; */
+
 @font-face {
-  font-family: "Decorative-Bold";
-  src: url("../fonts/Spectral/Spectral-SemiBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'MontserratItalic';
+  src: url('../fonts/Montserrat/Montserrat-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
 }
 
-/* font-family: "Deco-reg"; */
 @font-face {
-  font-family: "Decorative-Regular";
-  src: url("../fonts/Spectral/Spectral-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'MontserratMediumItalic';
+  src: url('../fonts/Montserrat/Montserrat-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
 }
+
+//decorative
+
+@font-face {
+  font-family: 'LinguaFranca-Regular';
+  src: url('../fonts/Lingua/LinguaFranca-Regular.otf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LinguaFranca-Italic';
+  src: url('../fonts/Lingua/LinguaFranca-Italic.otf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+

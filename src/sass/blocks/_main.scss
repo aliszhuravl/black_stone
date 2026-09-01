@@ -8,9 +8,12 @@
     &_img {
       position: relative;
       margin-bottom: 60px;
+      border-radius: 32px;
+      overflow: hidden;
       .main_img {
         width: 100%;
         display: block;
+        object-fit: cover;
       }
     }
     .scroll {
@@ -28,7 +31,7 @@
       padding-left: calc(25% + 22px);
       .decorative {
         margin-bottom: 24px;
-        max-width: 700px;
+        max-width: 750px;
       }
       .subtext {
         max-width: 600px;
@@ -166,10 +169,12 @@
       width: 50%;
       margin-bottom: 0;
       padding: 60px;
+      color: #1E1E1E;
       .contacts__box {
         &_row {
           margin-bottom: 32px;
           .address {
+            color: #1E1E1E;
             margin-bottom: 4px;
             font-family: $font-family_medium;
             font-size: calc(16px + (20 - 16) * ((100vw - 1280px) / (1920 - 1280)));
@@ -188,7 +193,7 @@
             margin-right: 40px;
             width: 50%;
               .link {
-                color: $color-black;
+                color: #1E1E1E;
                 text-transform: none;
                 font-size: calc(16px + (20 - 16) * ((100vw - 1280px) / (1920 - 1280)));
                 margin-bottom: 4px;
@@ -197,6 +202,8 @@
                   }
               }
               p:first-child {
+                color: #1E1E1E;
+                font-family: $font-family_medium;
                 margin-bottom: 4px;
                 font-size: calc(16px + (20 - 16) * ((100vw - 1280px) / (1920 - 1280)));
               }

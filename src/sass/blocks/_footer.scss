@@ -29,7 +29,7 @@
             padding: 0;
               li {
                 font-size: calc(16px + (18 - 16) * ((100vw - 1280px) / (1920 - 1280)));
-                margin-bottom: 9px;
+                margin-bottom: 12px;
                   a {
                     color: rgba(255, 255, 255, 0.70);
                     &:hover {
@@ -43,6 +43,7 @@
               &_item {
                 margin-bottom: 20px;
                   .subtitle {
+                    margin-top: 8px;
                     color: rgba(255, 255, 255, 0.60);
                     font-size: calc(14px + (16 - 14) * ((100vw - 1280px) / (1920 - 1280)));
                   }
@@ -51,7 +52,7 @@
             .bold_link {
               color: $color-white;
               font-size: calc(16px + (18 - 16) * ((100vw - 1280px) / (1920 - 1280)));
-              margin-bottom: 6px;
+              margin-bottom: 12px;
                 &:hover {
                   color: $color-gold;
                 }
